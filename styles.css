@@ -1,0 +1,32 @@
+/* ---------- Base ---------- */
+
+@font-face {
+  font-family: "Norse";
+  src: url("fonts/Norse-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --green: #596d48;
+  --green-dark: #475839;
+  --bg: #f9fafb;
+  --text: #111827;
+  --heading: #1f2937;
+  --border: #e5e7eb;
+  --focus: #3b5bdb;
+  --error: #dc2626;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
