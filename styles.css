@@ -173,3 +173,77 @@ body {
 .field input:user-invalid:not(:focus) {
   border-color: var(--error);
 }
+
+/* ---------- Actions ---------- */
+
+.actions button {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 8px;
+  font: inherit;
+  font-weight: 700;
+  color: #fff;
+  background: var(--green);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background: var(--green-dark);
+}
+
+.actions button:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.actions p {
+  margin: 1.75rem 0 0;
+}
+
+.actions a {
+  color: var(--green);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.actions a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Small screens ---------- */
+
+@media (max-width: 800px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    min-height: 16rem;
+  }
+
+  .logo-band {
+    margin-top: 2.5rem;
+  }
+
+  .logo-band img {
+    height: 4.5rem;
+  }
+
+  .logo-band h1 {
+    font-size: 4rem;
+  }
+
+  .content > * {
+    padding-inline: 1rem;
+  }
+
+  .intro {
+    flex: none;
+    font-size: 1.1rem;
+  }
+
+  .fields {
+    grid-template-columns: 1fr;
+  }
+}
