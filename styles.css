@@ -30,3 +30,88 @@ body {
   color: var(--text);
   background: var(--bg);
 }
+
+/* ---------- Page layout ---------- */
+
+body {
+  display: grid;
+  grid-template-columns: minmax(300px, 37%) 1fr;
+  min-height: 100vh;
+}
+
+/* ---------- Sidebar ---------- */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background: url("images/background.jpg") center / cover no-repeat;
+}
+
+.logo-band {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 22vh;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.logo-band img {
+  height: 7rem;
+}
+
+.logo-band h1 {
+  margin: 0;
+  font-family: "Norse", Impact, sans-serif;
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.credit {
+  margin-top: auto;
+  padding: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.credit a {
+  color: inherit;
+}
+
+/* ---------- Content column ---------- */
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content > * {
+  padding-inline: 2rem;
+}
+
+.intro {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-block: 2rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.intro p {
+  max-width: 50ch;
+  margin: 0 0 1.5rem;
+}
+
+.intro p:last-child {
+  margin-bottom: 0;
+}
+
+.actions {
+  flex: 1;
+  padding-block: 2rem;
+}
